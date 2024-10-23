@@ -45,7 +45,7 @@ const Sidebar = () => {
         '& .pro-sidebar-inner': {
           background: `${colors.primary[400]} !important`,
         },
-        '& .pro-sidebar-wrapper': {
+        '& .pro-icon-wrapper': {
           backgroundColor: 'transparent !important',
         },
         '& .pro-inner-item': {
@@ -61,7 +61,7 @@ const Sidebar = () => {
     >
       <ProSidebar collapsed={isCollapsed}>
         {/* LOGO AND MENU ICONS */}
-        <Menu>
+        <Menu iconShape="square">
           <MenuItem
             onClick={() => setIsCollapsed(!isCollapsed)}
             icon={isCollapsed ? <MenuOutlinedIcon /> : undefined}
