@@ -3,7 +3,8 @@
 html,
 body,
 #root,
-.app {
+.app,
+.content {
   height: 100%;
   width: 100%;
   font-family: 'Source Sans 3', sans-serif;
@@ -15,7 +16,8 @@ body,
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 1px;
+  display: none;
 }
 
 /* Track */
