@@ -41,6 +41,7 @@ const Sidebar = () => {
 
   return (
     <Box
+      height="100vh"
       sx={{
         '& .pro-sidebar-inner': {
           background: `${colors.primary[400]} !important`,
@@ -128,7 +129,8 @@ const Sidebar = () => {
             <Typography
               variant="h6"
               color={colors.grey[300]}
-              sx={{ m: '15px 0 5px 20px' }}
+              sx={{ m: '15px 20px 5px 20px' }}
+              textAlign={isCollapsed ? 'center' : 'left'}
             >
               Data
             </Typography>
@@ -157,7 +159,8 @@ const Sidebar = () => {
             <Typography
               variant="h6"
               color={colors.grey[300]}
-              sx={{ m: '15px 0 5px 20px' }}
+              sx={{ m: '15px 20px 5px 20px' }}
+              textAlign={isCollapsed ? 'center' : 'left'}
             >
               Pages
             </Typography>
@@ -186,7 +189,8 @@ const Sidebar = () => {
             <Typography
               variant="h6"
               color={colors.grey[300]}
-              sx={{ m: '15px 0 5px 20px' }}
+              sx={{ m: '15px 20px 5px 20px' }}
+              textAlign={isCollapsed ? 'center' : 'left'}
             >
               Chart
             </Typography>

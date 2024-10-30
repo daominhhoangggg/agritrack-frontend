@@ -37,6 +37,13 @@ const LineChart = ({ isDashboard = false }) => {
             fill: colors.grey[100],
           },
         },
+        crosshair: {
+          line: {
+            stroke: colors.grey[400],
+            strokeWidth: 2,
+            strokeDasharray: '6 6',
+          },
+        },
         tooltip: {
           container: {
             color: colors.primary[500],
